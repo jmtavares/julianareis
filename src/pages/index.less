@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  font-family: "Open Sans", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: hsla(0, 0%, 0%, 0.8);
+  font-weight: normal;
+  word-wrap: break-word;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: fadeIn ease 3s;
+}
+
+.container {
+  display: flex;
+  width: 1024px;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+  .left-panel {
+    flex: 0 0 300px;
+    border-right: 2px solid #0f7c79;
+    ul {      
+      li {
+        color: hsla(0, 0%, 0%, 0.8);
+        font-family: "Dosis", sans-serif;
+        line-height: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .right-panel {
+    flex: 1;
+  }
+
+  .left-panel,
+  .right-panel {
+    display: flex;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .description {
+    color: #898683;
+    line-height: 24px;
+    border-bottom: 2px solid #0f7c79;
+    padding-bottom: 40px;
+    font-size: 16px;
+  }
+
+  .row {
+    color: #898683;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    a {
+      color: #898683;
+      text-decoration: none;
+    }
+  }
+
+  .left-panel-header {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .connected-line {
+    .line {
+      position: relative;
+      height: 70px;
+      font-size: 14px;
+      font-family: "Dosis", sans-serif;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 90px;
+        width: 2px;
+        height: 70px;
+        background: #0f7c79;
+        z-index: -1;
+      }
+
+      &:first-child {
+        &::before {          
+          background: linear-gradient(to bottom, transparent 20%, #0f7c79 75%);
+        }
+      }
+
+      .dates {
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        font-size: 15px;
+        width: 70px;
+        text-align: right;
+      }
+
+      .title,
+      .subtitle {
+        position: absolute;
+        left: 110px;
+      }
+      .title {
+        bottom: -3px;
+        font-weight: bold;
+        color: #0f7c79;
+      }
+      .subtitle {
+        bottom: -25px;
+      }
+
+      .circle {
+        position: absolute;
+        bottom: 0;
+        left: 86px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #0f7c79;
+      }
+    }
+  }
+}

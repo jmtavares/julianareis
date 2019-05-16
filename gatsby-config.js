@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Julian Reis`,
+    title: `Juliana Reis`,
     description: ``,
     author: ``,
   },
@@ -19,6 +19,16 @@ module.exports = {
         display: `minimal-ui`        
       },
     },
+    `gatsby-plugin-less`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [        
+          `Open+Sans`,
+          `Dosis\:400,700`
+        ]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
