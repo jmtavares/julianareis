@@ -1,19 +1,14 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from "prop-types";
+import React from "react";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{}}
-  >    
-  </header>
-)
+const Header = ({ siteTitle }) => <header style={{}} />;
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+    siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+    siteTitle: ``
+};
 
-export default Header
+export default Header;
