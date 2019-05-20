@@ -8,6 +8,7 @@ import locationIcon from "../images/location.svg";
 import emailIcon from "../images/email.svg";
 import phoneIcon from "../images/phone.svg";
 import linkedInIcon from "../images/linkedin.svg";
+import photo from "../images/photo.png";
 
 const IndexPage = () => (
     <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
         <div className="container">
             <div className="left-panel">
                 <div className="left-panel-header">
+                    <img className="photo" src={photo} alt="photography" />
                     <h1>Juliana Reis</h1>
                     <h4>Graphic Designer</h4>
                 </div>
@@ -77,13 +79,15 @@ const IndexPage = () => (
             <div className="right-panel">
                 <div>
                     <div className="description">
-                        I'm an experienced graphic designer that love to
-                        prototype, be creative and solve design problems. I’m
-                        passionate about design in general, but my focus right
-                        now is around the Web. At the beginning of 2018, I’ve
-                        started this journey to learn more and more about Web
-                        Design. I’ve taken a couple of courses/workshops and
-                        went to a lot of meetups.
+                        I'm an experienced graphic designer that loves
+                        prototyping, being creative and solving design problems.
+                        I’m passionate about design in general, but my focus
+                        right now is around the UI and UX area. At the beginning
+                        of 2018, I’ve started this journey to learn more and
+                        more about Web Design. I’ve taken a couple of
+                        courses/workshops and went to a lot of meetups where I
+                        am gaining skills within the area as I am always eager
+                        to learn.
                     </div>
                 </div>
                 <div>
