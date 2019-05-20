@@ -111,7 +111,7 @@ const IndexPage = () => (
                             <div className="dates">2019</div>
                             <div className="title">EDIT</div>
                             <div className="subtitle">
-                                USER EXPERIENCE & USER INTERFACE DESIGN
+                                UX & UI DESIGN
                             </div>
                         </div>
                         <div className="line">
