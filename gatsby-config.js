@@ -2,9 +2,11 @@ module.exports = {
     siteMetadata: {
         title: `Juliana Reis`,
         description: ``,
-        author: ``
+        author: ``,
+        siteUrl: `https://www.julianareis.me`,
     },
     plugins: [
+        `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
