@@ -25,6 +25,12 @@ module.exports = {
             options: {
                 fonts: [`Open+Sans`, `Dosis\:400,700`]
             }
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: "UA-56447609-5"
+            }
         }
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
