@@ -51,7 +51,8 @@ const IndexPage = () => (
                     />
                     <a
                         className="row-description"
-                        href="www.linkedin.com/in/julianafreis"
+                        rel="noopener noreferrer"
+                        href="https://www.linkedin.com/in/julianafreis"
                         target="_blank"
                     >
                         www.linkedin.com/in/julianafreis

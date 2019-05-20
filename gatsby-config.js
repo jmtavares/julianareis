@@ -14,8 +14,8 @@ module.exports = {
                 name: `Juliana Reis`,
                 short_name: `Juliana Reis`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
+                background_color: `#0f7c79`,
+                theme_color: `#0f7c79`,
                 display: `minimal-ui`
             }
         },
