@@ -12,7 +12,7 @@ import photo from "../images/photo.png";
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Juliana Reis" keywords={[]} />
+        <SEO title="Juliana Reis" keywords={['design', 'sketch', 'cv', 'designer', 'photography', 'education', 'experience']} />
         <div className="container">
             <div className="left-panel">
                 <div className="left-panel-header">
