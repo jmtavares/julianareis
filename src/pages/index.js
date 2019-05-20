@@ -2,6 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./index.less"
+import educationIcon from "../images/education.svg"
+import experienceIcon from "../images/experience.svg"
+import locationIcon from "../images/location.svg"
+import emailIcon from "../images/email.svg"
+import phoneIcon from "../images/phone.svg"
+import linkedInIcon from "../images/linkedin.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -13,13 +19,28 @@ const IndexPage = () => (
           <h4>Graphic Designer</h4>
         </div>
 
-        <div className="row">Vila Nova de Gaia</div>
-        <div className="row">
-          <a href="mailto:juliana.ju_@live.com.pt">juliana.ju_@live.com.pt</a>
+        <div className="row lower">
+          <img src={locationIcon} alt="location" className="icon small" />
+
+          <span className="row-description">Vila Nova de Gaia</span>
         </div>
-        <div className="row">+351 934 200 771</div>
-        <div className="row">
-          <a href="www.linkedin.com/in/julianafreis" target="_blank">
+        <div className="row lower">
+          <img src={emailIcon} alt="email" className="icon small" />
+          <a className="row-description" href="mailto:juliana.ju_@live.com.pt">
+            juliana.ju_@live.com.pt
+          </a>
+        </div>
+        <div className="row lower">
+          <img src={phoneIcon} alt="email" className="icon small" />
+          <span className="row-description">+351 934 200 771</span>
+        </div>
+        <div className="row lower">
+          <img src={linkedInIcon} alt="email" className="icon small" />
+          <a
+            className="row-description"
+            href="www.linkedin.com/in/julianafreis"
+            target="_blank"
+          >
             www.linkedin.com/in/julianafreis
           </a>
         </div>
@@ -54,7 +75,10 @@ const IndexPage = () => (
           </div>
         </div>
         <div>
-          <h2>Education</h2>
+          <h2 className="with-icon">
+            <img src={educationIcon} className="icon" alt="Education" />
+            Education
+          </h2>
           <div className="connected-line">
             <div className="line">
               <div className="circle" />
@@ -97,14 +121,19 @@ const IndexPage = () => (
           </div>
         </div>
         <div>
-          <h2>Experience</h2>          
+          <h2 className="with-icon">
+            <img src={experienceIcon} className="icon" alt="Experience" />
+            Experience
+          </h2>
           <div className="connected-line">
             <div className="line">
               <div className="circle" />
               <div className="dates">2013 - 2019</div>
-              <div className="title">MOLDIFLEX-INDUSTRIA DE MOLDES E FLEXOGRÁFICOS, LDA.</div>
+              <div className="title">
+                MOLDIFLEX-INDUSTRIA DE MOLDES E FLEXOGRÁFICOS, LDA.
+              </div>
               <div className="subtitle">GRAPHIC DESIGNER</div>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
