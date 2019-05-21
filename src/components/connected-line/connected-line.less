@@ -5,6 +5,7 @@
         height: 70px;
         font-size: 14px;
         font-family: "Dosis", sans-serif;
+        opacity: 0;
 
         &::before {
             content: "";
@@ -12,18 +13,73 @@
             top: 0px;
             left: 90px;
             width: 2px;
-            height: 70px;
             background: #0f7c79;
             z-index: -1;
+            height: 70px;
         }
 
-        &:first-child {
+        &:nth-child(1) {
+            animation: Fade 2s;
+            animation-fill-mode: forwards;
             &::before {
+                height: 0;
                 background: linear-gradient(
                     to bottom,
                     transparent 20%,
                     #0f7c79 75%
                 );
+                animation: Grow 3s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        &:nth-child(2) {
+            animation: Fade 2s 2s;
+            animation-fill-mode: forwards;
+            &::before {
+                height: 0;
+                animation: Grow 3s 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        &:nth-child(3) {
+            animation: Fade 2s 4s;
+            animation-fill-mode: forwards;
+            &::before {
+                height: 0;
+                animation: Grow 3s 4s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        &:nth-child(4) {
+            animation: Fade 2s 6s;
+            animation-fill-mode: forwards;
+            &::before {
+                height: 0;
+                animation: Grow 3s 6s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        &:nth-child(5) {
+            animation: Fade 2s 8s;
+            animation-fill-mode: forwards;
+            &::before {
+                height: 0;
+                animation: Grow 3s 8s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        &:nth-child(6) {
+            animation: Fade 2s 10s;
+            animation-fill-mode: forwards;
+            &::before {
+                height: 0;
+                animation: Grow 3s 10s;
+                animation-fill-mode: forwards;
             }
         }
 
