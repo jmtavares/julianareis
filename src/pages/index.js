@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import ConnectedLine from "../components/connected-line/connected-line";
 import "./index.less";
 import educationIcon from "../images/education.svg";
 import experienceIcon from "../images/experience.svg";
@@ -10,9 +11,59 @@ import phoneIcon from "../images/phone.svg";
 import linkedInIcon from "../images/linkedin.svg";
 import photo from "../images/photo.png";
 
+const educationOptions = [
+    {
+        date: "2019",
+        title: "UDEMY",
+        subtitle: "UX & DESIGN THINKING"
+    },
+    {
+        date: "2019",
+        title: "EDIT",
+        subtitle: "UX & UI DESIGN"
+    },
+    {
+        date: "2018 - 2019",
+        title: "CHIEF OF DESIGN",
+        subtitle: "INTRODUCTION TO WEB DESIGN"
+    },
+    {
+        date: "2018",
+        title: "UDEMY - SKETCH",
+        subtitle: "DESIGN OF SKETCH APPLICATIONS"
+    },
+    {
+        date: "2017 - 2020",
+        title: "WALL STREET ENGLISH",
+        subtitle: "ENGLISH COURSE"
+    },
+    {
+        date: "2010 - 2012",
+        title: "COLÉGIO INTERNATO DOS CARVALHOS",
+        subtitle: "GRAPHIC ARTS"
+    }
+];
+
+const experienceOptions = [{
+    date: '2013 - 2019',
+    title: 'MOLDIFLEX-INDUSTRIA DE MOLDES E FLEXOGRÁFICOS, LDA.',
+    subtitle: 'GRAPHIC DESIGNER'
+}]
+
 const IndexPage = () => (
     <Layout>
-        <SEO title="Juliana Reis" keywords={['design', 'sketch', 'cv', 'designer', 'photography', 'education', 'experience']} />
+        <SEO
+            title="Juliana Reis"
+            keywords={[
+                "design",
+                "sketch",
+                "cv",
+                "designer",
+                "photography",
+                "education",
+                "experience"
+            ]}
+        />
         <div className="container">
             <div className="left-panel">
                 <div className="left-panel-header">
@@ -100,52 +151,7 @@ const IndexPage = () => (
                         />
                         Education
                     </h2>
-                    <div className="connected-line">
-                        <div className="line">
-                            <div className="circle" />
-                            <div className="dates">2019</div>
-                            <div className="title">UDEMY</div>
-                            <div className="subtitle">UX & DESIGN THINKING</div>
-                        </div>
-                        <div className="line">
-                            <div className="circle" />
-                            <div className="dates">2019</div>
-                            <div className="title">EDIT</div>
-                            <div className="subtitle">
-                                UX & UI DESIGN
-                            </div>
-                        </div>
-                        <div className="line">
-                            <div className="circle" />
-                            <div className="dates">2019 - 2019</div>
-                            <div className="title">CHIEF OF DESIGN</div>
-                            <div className="subtitle">
-                                INTRODUCTION TO WEB DESIGN
-                            </div>
-                        </div>
-                        <div className="line">
-                            <div className="circle" />
-                            <div className="dates">2018</div>
-                            <div className="title">UDEMY - SKETCH</div>
-                            <div className="subtitle">
-                                DESIGN OF SKETCH APPLICATIONS
-                            </div>
-                        </div>
-                        <div className="line">
-                            <div className="circle" />
-                            <div className="dates">2017 - 2020</div>
-                            <div className="title">WALL STREET ENGLISH</div>
-                            <div className="subtitle">ENGLISH COURSE</div>
-                        </div>
-                        <div className="line">
-                            <div className="circle" />
-                            <div className="dates">2010 - 2012</div>
-                            <div className="title">
-                                COLÉGIO INTERNATO DOS CARVALHOS
-                            </div>
-                            <div className="subtitle">GRAPHIC ARTS</div>
-                        </div>
-                    </div>
+                    <ConnectedLine options={educationOptions} />
                 </div>
                 <div>
                     <h2 className="with-icon">
@@ -156,17 +162,7 @@ const IndexPage = () => (
                         />
                         Experience
                     </h2>
-                    <div className="connected-line">
-                        <div className="line">
-                            <div className="circle" />
-                            <div className="dates">2013 - 2019</div>
-                            <div className="title">
-                                MOLDIFLEX-INDUSTRIA DE MOLDES E FLEXOGRÁFICOS,
-                                LDA.
-                            </div>
-                            <div className="subtitle">GRAPHIC DESIGNER</div>
-                        </div>
-                    </div>
+                    <ConnectedLine options={experienceOptions} />
                 </div>
             </div>
         </div>
