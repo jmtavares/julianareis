@@ -5,26 +5,33 @@
   "version": "0.1.0",
   "author": "Jose Tavares <josetavares00@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.4.3",
-    "gatsby-cli": "^2.5.13",
-    "gatsby-image": "^2.0.41",
-    "gatsby-plugin-google-analytics": "^2.0.20",
-    "gatsby-plugin-google-fonts": "^1.0.0",
-    "gatsby-plugin-less": "^2.0.13",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.0",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.0.37",
-    "gatsby-plugin-sitemap": "^2.1.0",
+    "gatsby": "^2.10.0",
+    "gatsby-cli": "^2.7.0",
+    "gatsby-image": "^2.2.0",
+    "gatsby-plugin-google-analytics": "^2.1.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-less": "^2.1.0",
+    "gatsby-plugin-manifest": "^2.2.0",
+    "gatsby-plugin-offline": "^2.2.0",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-sharp": "^2.2.0",
+    "gatsby-plugin-sitemap": "^2.2.0",
     "gatsby-transformer-sharp": "^2.1.19",
     "less": "^3.9.0",
-    "prettier": "^1.17.1",
+    "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0"
+  },
   "keywords": [],
   "license": "MIT",
   "scripts": {
@@ -33,6 +40,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "npm run lint",
+    "lint": "eslint 'src/' --color --ext .js"
   }
 }
