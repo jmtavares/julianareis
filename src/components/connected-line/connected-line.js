@@ -5,7 +5,7 @@ import "./connected-line.less";
 const ConnectedLine = ({ options }) => (
     <div className="connected-line">
         {options.map((option,index) => (
-            <div className="line" key={index}>
+            <div className={`line i${index}`} key={index}>
                 <div className="circle" />
                 <div className="dates">{option.date}</div>
                 <div className="right-section">

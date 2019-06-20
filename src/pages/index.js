@@ -42,7 +42,7 @@ const educationOptions = [
         title: "COLÉGIO INTERNATO DOS CARVALHOS",
         subtitle: "GRAPHIC ARTS"
     }
-];
+].reverse()
 
 const experienceOptions = [{
     date: '2013 - 2019',
