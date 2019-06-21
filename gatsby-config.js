@@ -16,9 +16,10 @@ module.exports = {
                 name: `Juliana Reis`,
                 short_name: `Juliana Reis`,
                 start_url: `/`,
-                background_color: `#0f7c79`,
+                background_color: `#ffffff`,
                 theme_color: `#0f7c79`,
-                display: `minimal-ui`
+                display: `minimal-ui`,
+                icon: `src/images/logo.svg`
             }
         },
         `gatsby-plugin-less`,
