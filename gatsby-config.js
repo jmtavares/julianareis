@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: `Juliana Reis`,
-        description: ``,
+        description: `Juliana Reis Personal Website`,
         author: ``,
         siteUrl: `https://www.julianareis.me`,
     },
