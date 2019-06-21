@@ -3,7 +3,7 @@ module.exports = {
         title: `Juliana Reis`,
         description: `Juliana Reis Personal Website`,
         author: ``,
-        siteUrl: `https://www.julianareis.me`,
+        siteUrl: `https://www.julianareis.me`
     },
     plugins: [
         `gatsby-plugin-sitemap`,
@@ -27,13 +27,21 @@ module.exports = {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
                 fonts: [`Open+Sans`, `Dosis\:400,700`],
-                display: 'swap'
+                display: "swap"
             }
         },
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
                 trackingId: process.env.GA
+            }
+        },
+        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/blog`,
+                name: "blog"
             }
         }
         // this (optional) plugin enables Progressive Web App + Offline functionality
