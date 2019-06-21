@@ -36,7 +36,21 @@ module.exports = {
                 trackingId: process.env.GA
             }
         },
-        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 1024,
+                            quality: 100
+                        }
+                    },
+                    `gatsby-remark-copy-linked-files`
+                ]
+            }
+        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {

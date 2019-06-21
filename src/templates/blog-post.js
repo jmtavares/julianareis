@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
-
+import Layout from "../components/layout/layout";
+import './blog-post.less';
 
 const BlogPost = ({ data }) => {
     const post = data.markdownRemark;
     const { title } = post.frontmatter;
+
     return (
         <Layout>
-            <div>
+            <div className="blog-post">
                 <h1>{title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>

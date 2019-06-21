@@ -1,4 +1,4 @@
-@import "./animations";
+@import "../animations";
 
 html {
     box-sizing: border-box;
@@ -16,28 +16,4 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     animation: fadeIn ease 2s;
-}
-
-.subtitle {
-    font-family: "Dosis", sans-serif;
-    font-size: 18px;
-    color: hsla(0, 0%, 0%, 0.55);
-    max-width: 600px;
-    margin-top: 50px;
-}
-
-.index {
-    display: flex;
-    width: 1024px;
-    margin: 0 auto;
-    padding: 50px 0;
-    box-sizing: border-box;
-}
-
-@media screen and (max-width: 1023px) {
-    .index {
-        width: 100%;
-        flex-direction: column;
-        padding: 20px;
-    }
 }
