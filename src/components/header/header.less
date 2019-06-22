@@ -14,16 +14,23 @@ header {
         height: 40px;
     }
 
+    .menus {
+        display: flex;
+    }
+
     .link {
         color: #222222;
-        margin: 0 10px;
         text-decoration: none;
         font-family: "Dosis", sans-serif;
-        padding: 5px 0;
-        &:last-of-type {
-            margin: 0 0 0 10px;
-        }
-
+        padding: 10px 5px;
+        border-left: 5px solid transparent;
         .underline();
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    header {
+        height: 60px;
+        padding: 0 20px;
     }
 }
