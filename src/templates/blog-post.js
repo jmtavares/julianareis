@@ -18,7 +18,7 @@ const BlogPost = ({ data }) => {
             />
             <div className="blog-post">
                 <h1>{title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <div className="post" dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
         </Layout>
     );
