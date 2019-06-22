@@ -6,7 +6,6 @@ import SEO from "../components/seo";
 import Hello from "../components/hello/hello";
 import Portfolio from "../components/portfolio/portfolio";
 import ViewPortfolio from "../components/view-portfolio/view-portfolio";
-import "./index.less";
 
 const IndexPage = ({ data }) => {
     const posts = data.allMarkdownRemark;
