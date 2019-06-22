@@ -1,3 +1,5 @@
+@import "../../animations.less";
+
 header {
     display: flex;
     max-width: 1024px;
@@ -16,15 +18,12 @@ header {
         color: #222222;
         margin: 0 10px;
         text-decoration: none;
-        height: 20px;
-        cursor: pointer;
         font-family: "Dosis", sans-serif;
+        padding: 5px 0;
         &:last-of-type {
             margin: 0 0 0 10px;
         }
 
-        &.active {
-            border-bottom: 1px solid #222222;
-        }
+        .underline();
     }
 }

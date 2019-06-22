@@ -109,18 +109,6 @@ const AboutPage = () => (
         </div>
         <div className="right-panel">
             <div>
-                <div className="description">
-                    I&apos;m an experienced graphic designer that loves
-                    prototyping, being creative and solving design problems. I’m
-                    passionate about design in general, but my focus right now
-                    is around the UI and UX area. At the beginning of 2018,
-                    I&apos;ve started this journey to learn more and more about
-                    Web Design. I’ve taken a couple of courses/workshops and
-                    went to a lot of meetups where I am gaining skills within
-                    the area as I am always eager to learn.
-                </div>
-            </div>
-            <div>
                 <h2 className="with-icon">
                     <img src={educationIcon} className="icon" alt="Education" />
                     Education

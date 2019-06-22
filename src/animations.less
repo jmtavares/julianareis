@@ -17,3 +17,32 @@
         opacity: 1;
     }
 }
+
+.underline {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 51%;
+        right: 51%;
+        bottom: 0;
+        background: #0f7c79;
+        height: 2px;
+        transition-property: "left, right";
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        &:before {
+            left: 0;
+            right: 0;
+        }
+    }
+}

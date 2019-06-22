@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
+import Portfolio from "../components/portfolio/portfolio";
 
 const PortfolioPage = ({ data }) => {
-    const postList = data.allMarkdownRemark;
+    const posts = data.allMarkdownRemark;
 
     return (
         <Layout>
@@ -21,22 +22,7 @@ const PortfolioPage = ({ data }) => {
                     "portfolio"
                 ]}
             />
-            <div className="portfolio">
-                <h1>Portfolio</h1>
-                {postList.edges.map(({ node }) => (
-                    <Link
-                        to={node.fields.slug}
-                        className="link"
-                        key={node.fields.slug}
-                    >
-                        <div className="post-list">
-                            <h1>{node.frontmatter.title}</h1>
-                            <span>{node.frontmatter.date}</span>
-                            <p>{node.excerpt}</p>
-                        </div>
-                    </Link>
-                ))}
-            </div>
+            <Portfolio posts={posts} showTitle />
         </Layout>
     );
 };
@@ -47,8 +33,8 @@ PortfolioPage.propTypes = {
 
 export default PortfolioPage;
 
-export const listQuery = graphql`
-    query ListQuery {
+export const PortfolioQuery = graphql`
+    query PortfolioQuery {
         allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
             edges {
                 node {
@@ -59,6 +45,17 @@ export const listQuery = graphql`
                     frontmatter {
                         date(formatString: "MMMM Do YYYY")
                         title
+                        imageposition
+                        image {
+                            childImageSharp {
+                                resize(width: 1500, height: 1500) {
+                                    src
+                                }
+                                fluid(maxWidth: 786, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                 }
             }

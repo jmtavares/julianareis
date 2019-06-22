@@ -1,7 +1,7 @@
 import React from "react";
 import "./hello.less";
 
-const HelloPage = () => (
+const Hello = () => (
     <div className="hello">
         <div>
             <h1>Hello, I&apos;m Juliana Reis</h1>
@@ -19,4 +19,4 @@ const HelloPage = () => (
     </div>
 );
 
-export default HelloPage;
+export default Hello;

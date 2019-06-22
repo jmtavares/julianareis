@@ -12,25 +12,17 @@ const Header = () => (
         </div>
 
         <div className="menus">
-            <ul>
-                <li>
-                    <Link to="/" className="link" activeClassName="active">
-                        Hello
-                    </Link>
+            <Link to="/" className="link" activeClassName="active">
+                Hello
+            </Link>
 
-                    {/* <Link
-                        to="/portfolio"
-                        className="link"
-                        activeClassName="active"
-                    >
-                        Portfolio
-                    </Link> */}
+            <Link to="/portfolio/" className="link" activeClassName="active">
+                Portfolio
+            </Link>
 
-                    <Link to="/about" className="link" activeClassName="active">
-                        About
-                    </Link>
-                </li>
-            </ul>
+            <Link to="/about/" className="link" activeClassName="active">
+                About
+            </Link>
         </div>
     </header>
 );
