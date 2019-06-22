@@ -15,17 +15,7 @@ const IndexPage = ({ data }) => {
         <Layout>
             <SEO
                 title="Juliana Reis"
-                keywords={[
-                    "design",
-                    "sketch",
-                    "cv",
-                    "designer",
-                    "photography",
-                    "education",
-                    "experience",
-                    "web",
-                    "react"
-                ]}
+                keywords={[]}
             />
             <Hello />
             <Portfolio posts={posts} showTitle={false} />

@@ -12,15 +12,7 @@ const PortfolioPage = ({ data }) => {
         <Layout>
             <SEO
                 title="Portfolio"
-                keywords={[
-                    "design",
-                    "sketch",
-                    "designer",
-                    "photography",
-                    "education",
-                    "experience",
-                    "portfolio"
-                ]}
+                keywords={["projects"]}
             />
             <Portfolio posts={posts} showTitle />
         </Layout>

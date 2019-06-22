@@ -2,14 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/layout/layout";
+import SEO from "../components/seo";
 import "./blog-post.less";
 
 const BlogPost = ({ data }) => {
     const post = data.markdownRemark;
-    const { title } = post.frontmatter;
+    const { title, description, keywords } = post.frontmatter;
 
     return (
         <Layout>
+            <SEO
+                title={title}
+                keywords={keywords.split(",")}
+                description={description}
+            />
             <div className="blog-post">
                 <h1>{title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -30,6 +36,8 @@ export const query = graphql`
             html
             frontmatter {
                 title
+                description
+                keywords
             }
         }
     }

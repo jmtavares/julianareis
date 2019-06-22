@@ -11,6 +11,18 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 function SEO({ description, lang, meta, keywords, title }) {
+    const defaultKeywords = [
+        "design",
+        "sketch",
+        "designer",
+        "web",
+        "react",
+        "gatsby",
+        "portfolio",
+        "about",
+        "hello"
+    ];
+    const groupedKeywords = defaultKeywords.concat(keywords);
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -72,10 +84,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 }
             ]
                 .concat(
-                    keywords.length > 0
+                    groupedKeywords.length > 0
                         ? {
                               name: `keywords`,
-                              content: keywords.join(`, `)
+                              content: groupedKeywords.join(`, `)
                           }
                         : []
                 )

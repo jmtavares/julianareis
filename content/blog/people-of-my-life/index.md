@@ -1,5 +1,7 @@
 ---
 title: "People of my life"
+description: "People of my life"
+keywords: ""
 date: '2019-06-20'
 image: image1.jpg
 imageposition: 'center center'
