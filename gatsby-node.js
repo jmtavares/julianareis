@@ -9,7 +9,7 @@ const path = require("path");
 const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`);
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
-    const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+    const blogPostTemplate = path.resolve(`src/components/blog-post/blog-post.js`);
     return new Promise((resolve, reject) => {
         resolve(
             graphql(`
@@ -36,14 +36,22 @@ exports.createPages = ({ actions, graphql }) => {
                     return reject(result.errors);
                 }
                 const blogTemplate = path.resolve(
-                    "./src/templates/blog-post.js"
+                    "./src/components/blog-post/blog-post.js"
                 );
-                result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+
+                // Create blog posts pages.
+                const posts = result.data.allMarkdownRemark.edges;
+
+                posts.forEach((post, index) => {
+                    const previous = index === posts.length - 1 ? null : posts[index + 1].node
+                    const next = index === 0 ? null : posts[index - 1].node
                     createPage({
-                        path: node.fields.slug,
+                        path: post.node.fields.slug,
                         component: blogTemplate,
                         context: {
-                            slug: node.fields.slug
+                            slug: post.node.fields.slug,
+                            previous,
+                            next,
                         } // additional data can be passed via context
                     });
                 });
