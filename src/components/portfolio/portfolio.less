@@ -1,3 +1,5 @@
+@import '../../animations.less';
+
 .portfolio {
     h1 {
         max-width: 1024px;
@@ -6,6 +8,16 @@
     .projects-list {
         display: flex;
         flex-wrap: wrap;
+
+        each(range(10), {
+            @animation-delay: (@value - 1) * 0.7;
+            .project:nth-child(@{value}) {
+                opacity: 0;
+                animation: Fade 1s;
+                animation-delay: ~"@{animation-delay}s";
+                animation-fill-mode: forwards;
+            }
+          });
     }
 }
 
