@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../layout/layout";
 import SEO from "../seo";
 import "./blog-post.less";
 
-const BlogPost = ({ data, pageContext }) => {
+const BlogPost = ({ data }) => {
     const post = data.markdownRemark;
     const { title, description, keywords } = post.frontmatter;
 
