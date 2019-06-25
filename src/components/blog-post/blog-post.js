@@ -12,7 +12,7 @@ const BlogPost = ({ data }) => {
     return (
         <Layout>
             <SEO
-                title={title}
+                title={title.toUpperCase()}
                 keywords={keywords.split(",")}
                 description={description}
             />

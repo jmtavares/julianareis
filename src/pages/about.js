@@ -6,8 +6,9 @@ import About from "../components/about/about";
 const IndexPage = () => (
     <Layout>
         <SEO
-            title="Juliana Reis"
-            keywords={["cv", "photography", "education", "experience"]}
+            title="About"
+            description="About"
+            keywords={["cv", "photography", "education", "experience", "InDesign", "Photoshop", "CorelDraw", "Illustrator"]}
         />
         <About />
     </Layout>
