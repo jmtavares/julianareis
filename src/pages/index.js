@@ -50,7 +50,7 @@ export const IndexQuery = graphql`
                                 resize(width: 1500, height: 1500) {
                                     src
                                 }
-                                fluid(maxWidth: 786, quality: 80) {
+                                fluid(maxWidth: 786, quality: 100) {
                                     ...GatsbyImageSharpFluid
                                 }
                             }

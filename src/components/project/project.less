@@ -1,6 +1,5 @@
 .project {
-    width: 50%;
-    height: 450px;
+    height: 400px;
     position: relative;
     &:hover, &:active {
         .description {
@@ -18,7 +17,7 @@
         align-items: center;
         justify-content: center;
         font-weight: bold;
-        font-size: 26px;
+        font-size: 24px;
         position: absolute;
         bottom: 0;
         top: 0;
@@ -31,8 +30,17 @@
 
 @media screen and (max-width: 1023px) {
     .project {
-        width: 100%;
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project {
+        height: 250px;
+
+        .description {
+            font-size: 20px;
+        }
     }
 }
 

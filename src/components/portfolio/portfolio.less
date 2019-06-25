@@ -6,8 +6,9 @@
         margin: 40px auto;
     }
     .projects-list {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
 
         each(range(10), {
             @animation-delay: (@value - 1) * 0.7;
@@ -25,6 +26,14 @@
     .portfolio {
         h1 {
             padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio {
+        .projects-list {
+            grid-template-columns: 1fr;
         }
     }
 }
