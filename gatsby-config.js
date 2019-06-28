@@ -60,6 +60,7 @@ module.exports = {
                 path: `${__dirname}/content/blog`,
                 name: "blog"
             }
-        }
+        },
+        `gatsby-plugin-netlify`
     ]
 };
