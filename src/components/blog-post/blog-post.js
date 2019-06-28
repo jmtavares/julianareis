@@ -25,7 +25,7 @@ class BlogPost extends React.PureComponent {
     };
 
     componentDidMount() {
-        this.images = this.blogPostRef.current.querySelectorAll("img");
+        this.images = this.blogPostRef.current.querySelectorAll("picture");
         ReactModal.setAppElement(document.getElementById("___gatsby"));
 
         document.addEventListener("click", this.handleDocumentClick, false);
@@ -44,7 +44,7 @@ class BlogPost extends React.PureComponent {
         ) {
             const index = Array.prototype.indexOf.call(
                 this.images,
-                event.target
+                event.target.parentElement
             );
             this.showImage(index);
         }
@@ -95,11 +95,12 @@ class BlogPost extends React.PureComponent {
     };
 
     stripImage = target => {
-        const imgElement = target.cloneNode(true);
+        const pictureElement = target.cloneNode(true);
+        const imgElement = pictureElement.querySelector("img");
         imgElement.style = "";
         imgElement.classList.remove("gatsby-resp-image-image");
 
-        return imgElement;
+        return pictureElement;
     };
 
     showImage(index) {
@@ -161,7 +162,10 @@ class BlogPost extends React.PureComponent {
                         }
                     }}
                 >
-                    <Swipeable onSwiped={this.handleSwipe} className="swipe-container">
+                    <Swipeable
+                        onSwiped={this.handleSwipe}
+                        className="swipe-container"
+                    >
                         <div
                             className="lightbox"
                             dangerouslySetInnerHTML={{ __html: target }}
