@@ -2,7 +2,7 @@
 
 html {
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow-y: unset;
     font-family: "Nunito", "Open Sans", Helvetica, Arial, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -15,6 +15,11 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+    &.ReactModal__Body--open {
+        overflow-y: hidden;
+        background-color: #000000;
+    }
 }
 
 h1,

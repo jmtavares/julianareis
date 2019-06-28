@@ -37,7 +37,10 @@ class BlogPost extends React.PureComponent {
     }
 
     handleDocumentClick = event => {
-        if (event.target.nodeName === "IMG") {
+        if (
+            event.target.nodeName === "IMG" &&
+            event.target.classList.contains("gatsby-resp-image-image")
+        ) {
             const index = Array.prototype.indexOf.call(
                 this.images,
                 event.target
