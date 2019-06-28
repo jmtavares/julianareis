@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import ReactModal from "react-modal";
+import { Swipeable } from "react-swipeable";
 import Layout from "../layout/layout";
 import SEO from "../seo";
 import "./blog-post.less";
@@ -59,6 +60,17 @@ class BlogPost extends React.PureComponent {
                 break;
             case 39:
                 this.nextImage();
+                break;
+        }
+    };
+
+    handleSwipe = event => {
+        switch (event.dir) {
+            case "Left":
+                this.nextImage();
+                break;
+            case "Right":
+                this.previousImage();
                 break;
         }
     };
@@ -149,10 +161,12 @@ class BlogPost extends React.PureComponent {
                         }
                     }}
                 >
-                    <div
-                        className="lightbox"
-                        dangerouslySetInnerHTML={{ __html: target }}
-                    />
+                    <Swipeable onSwiped={this.handleSwipe} className="swipe-container">
+                        <div
+                            className="lightbox"
+                            dangerouslySetInnerHTML={{ __html: target }}
+                        />
+                    </Swipeable>
                     <button
                         type="button"
                         className="modal-btn close-btn"
