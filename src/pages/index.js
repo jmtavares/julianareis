@@ -51,7 +51,7 @@ export const IndexQuery = graphql`
                                     src
                                 }
                                 fluid(maxWidth: 786, quality: 100) {
-                                    ...GatsbyImageSharpFluid
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
