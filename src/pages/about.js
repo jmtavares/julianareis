@@ -8,7 +8,16 @@ const IndexPage = () => (
         <SEO
             title="About"
             description="About"
-            keywords={["cv", "photography", "education", "experience", "InDesign", "Photoshop", "CorelDraw", "Illustrator"]}
+            keywords={[
+                "cv",
+                "photography",
+                "education",
+                "experience",
+                "InDesign",
+                "Photoshop",
+                "CorelDraw",
+                "Illustrator"
+            ]}
         />
         <About />
     </Layout>

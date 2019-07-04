@@ -10,10 +10,7 @@ const PortfolioPage = ({ data }) => {
 
     return (
         <Layout>
-            <SEO
-                title="Portfolio"
-                keywords={["projects"]}
-            />
+            <SEO title="Portfolio" keywords={["projects"]} />
             <Portfolio posts={posts} showTitle />
         </Layout>
     );

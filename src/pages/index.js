@@ -12,10 +12,7 @@ const IndexPage = ({ data }) => {
 
     return (
         <Layout>
-            <SEO
-                title="Juliana Reis"
-                keywords={[]}
-            />
+            <SEO title="Juliana Reis" keywords={[]} />
             <Hello />
             <Portfolio posts={posts} showTitle={false} />
             <ViewPortfolio />
