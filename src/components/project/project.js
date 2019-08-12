@@ -17,9 +17,7 @@ const Project = ({ node }) => {
                     fluid={node.frontmatter.image.childImageSharp.fluid}
                     imgStyle={imgStyle}
                 />
-                <div className="description">
-                    {node.frontmatter.title}
-                </div>
+                <div className="description">{node.frontmatter.title}</div>
             </Link>
         </div>
     );

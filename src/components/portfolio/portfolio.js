@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Project from "../project/project";
-import './portfolio.less';
+import "./portfolio.less";
 
 const Portfolio = ({ posts, showTitle }) => {
     return (
