@@ -61,6 +61,7 @@ module.exports = {
                 name: "blog"
             }
         },
-        `gatsby-plugin-netlify`
+        `gatsby-plugin-netlify`,
+        `gatsby-plugin-offline`
     ]
 };
