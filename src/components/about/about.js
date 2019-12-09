@@ -21,6 +21,11 @@ const educationOptions = [
         subtitle: "UX & UI DESIGN"
     },
     {
+        date: "2019 - 2020",
+        title: "WALL STREET ENGLISH",
+        subtitle: "ENGLISH COURSE"
+    },
+    {
         date: "2018 - 2019",
         title: "CHIEF OF DESIGN",
         subtitle: "INTRODUCTION TO WEB DESIGN"
@@ -29,11 +34,6 @@ const educationOptions = [
         date: "2018",
         title: "UDEMY - SKETCH",
         subtitle: "DESIGN OF SKETCH APPLICATIONS"
-    },
-    {
-        date: "2019 - 2020",
-        title: "WALL STREET ENGLISH",
-        subtitle: "ENGLISH COURSE"
     },
     {
         date: "2010 - 2012",
@@ -75,7 +75,9 @@ const AboutPage = () => (
             </div>
             <div className="row lower">
                 <img src={phoneIcon} alt="email" className="icon small" />
-                <span className="row-description">+351 934 200 771</span>
+                <span className="row-description">
+                    <a href="tel:351934200771">+351 934 200 771</a>
+                </span>
             </div>
             <div className="row lower">
                 <img src={linkedInIcon} alt="email" className="icon small" />
