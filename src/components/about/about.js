@@ -96,7 +96,7 @@ const AboutPage = () => (
                     <li>Communication / Logo Design</li>
                     <li>Vector Illustration</li>
                     <li>Digital / Web / UI & UX</li>
-                    <li>Flexography</li>
+                    <li>Flexography / Packaging</li>
                     <li>Photography</li>
                 </ul>
             </div>
