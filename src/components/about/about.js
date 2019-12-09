@@ -31,7 +31,7 @@ const educationOptions = [
         subtitle: "DESIGN OF SKETCH APPLICATIONS"
     },
     {
-        date: "2017 - 2020",
+        date: "2019 - 2020",
         title: "WALL STREET ENGLISH",
         subtitle: "ENGLISH COURSE"
     },
