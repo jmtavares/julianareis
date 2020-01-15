@@ -42,6 +42,19 @@ module.exports = {
             options: {
                 plugins: [
                     {
+                        resolve: 'gatsby-remark-video',
+                        options: {
+                            width: 'auto',
+                            height: 'auto',
+                            preload: 'auto',
+                            muted: true,
+                            autoplay: false,
+                            playsinline: true,
+                            controls: true,
+                            loop: true
+                        }
+                    },
+                    {
                         resolve: `gatsby-remark-images`,
                         options: {
                             maxWidth: 1024,

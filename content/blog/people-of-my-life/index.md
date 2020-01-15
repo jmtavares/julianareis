@@ -3,6 +3,7 @@ title: "People of my Life"
 description: "People of my Life"
 keywords: "people,life"
 date: '2019-06-13'
+image: 'image.jpg'
 imageposition: 'center center'
 ---
 

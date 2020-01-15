@@ -24,7 +24,10 @@ export default PortfolioPage;
 
 export const PortfolioQuery = graphql`
     query PortfolioQuery {
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        allMarkdownRemark(
+            filter: { frontmatter: { hide: { ne: true } } }
+            sort: { order: DESC, fields: [frontmatter___date] }
+        ) {
             edges {
                 node {
                     fields {
@@ -34,6 +37,7 @@ export const PortfolioQuery = graphql`
                     frontmatter {
                         date(formatString: "MMMM Do YYYY")
                         title
+                        hide
                         imageposition
                         image {
                             childImageSharp {
