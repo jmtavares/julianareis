@@ -7,4 +7,4 @@ image: image.jpg
 imageposition: 'center center'
 ---
 
-![image](./image.jpg)
+![Steven Wilson - Cover](./image.jpg)
