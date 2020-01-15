@@ -13,10 +13,16 @@ const Project = ({ node }) => {
     return (
         <div className="project" id={node.frontmatter.id}>
             <Link to={node.fields.slug} className="link">
-                <Img
-                    fluid={node.frontmatter.image.childImageSharp.fluid}
-                    imgStyle={imgStyle}
-                />
+                {node.frontmatter.image ? (
+                    <Img
+                        fluid={node.frontmatter.image.childImageSharp.fluid}
+                        imgStyle={imgStyle}
+                    />
+                ) : (
+                    <div className="description-no-image">
+                        {node.frontmatter.title}
+                    </div>
+                )}
                 <div className="description">{node.frontmatter.title}</div>
             </Link>
         </div>

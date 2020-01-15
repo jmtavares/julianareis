@@ -12,7 +12,7 @@
         margin-bottom: 20px;
 
         each(range(10), {
-            @animation-delay: (@value - 1) * 0.7;
+            @animation-delay: (@value - 1) * 0.5;
             .project:nth-child(@{value}) {
                 opacity: 0;
                 animation: Fade 1s;
