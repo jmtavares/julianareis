@@ -125,7 +125,7 @@ class BlogPost extends React.PureComponent {
         const { data } = this.props;
         const { isOpen, target, index } = this.state;
         const post = data.markdownRemark;
-        const { title, description, keywords } = post.frontmatter;
+        const { title, description, keywords, id } = post.frontmatter;
 
         return (
             <Layout>
@@ -134,7 +134,7 @@ class BlogPost extends React.PureComponent {
                     keywords={keywords.split(",")}
                     description={description}
                 />
-                <div className="blog-post" ref={this.blogPostRef}>
+                <div className="blog-post" ref={this.blogPostRef} id={id}>
                     <h1>{title}</h1>
                     <div
                         className="post"
@@ -216,6 +216,7 @@ export const query = graphql`
                 title
                 description
                 keywords
+                id
             }
         }
     }

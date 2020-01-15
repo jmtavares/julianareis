@@ -11,7 +11,7 @@ const Project = ({ node }) => {
     };
 
     return (
-        <div className="project">
+        <div className="project" id={node.frontmatter.id}>
             <Link to={node.fields.slug} className="link">
                 <Img
                     fluid={node.frontmatter.image.childImageSharp.fluid}

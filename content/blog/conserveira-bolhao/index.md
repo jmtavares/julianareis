@@ -5,6 +5,7 @@ keywords: "conserveira,bolhão,logo"
 date: '2019-06-19'
 image: image1.jpg
 imageposition: 'center center'
+id: 'conserveira-bolhao'
 ---
 
 ![A Conserveira do Bolhão](./image1.jpg)
@@ -16,5 +17,3 @@ imageposition: 'center center'
 ![A Conserveira do Bolhão - Protótipo](./image4.jpg)
 
 ![A Conserveira do Bolhão - Protótipo](./image5.jpg)
-
-![A Conserveira do Bolhão - Protótipo](./image6.jpg)
