@@ -29,8 +29,8 @@ export default IndexPage;
 export const IndexQuery = graphql`
     query IndexQuery {
         allMarkdownRemark(
+            filter: { frontmatter: { favorite: { eq: true } } }
             sort: { order: DESC, fields: [frontmatter___date] }
-            limit: 4
         ) {
             edges {
                 node {
@@ -42,6 +42,7 @@ export const IndexQuery = graphql`
                         date(formatString: "MMMM Do YYYY")
                         title
                         imageposition
+                        favorite
                         image {
                             childImageSharp {
                                 resize(width: 1500, height: 1500) {

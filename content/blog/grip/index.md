@@ -5,6 +5,7 @@ keywords: "skate,hardware,skateboards,cruisers,pennys,cultura,streetwear,porto,c
 date: '2019-06-25'
 image: image3.png
 imageposition: 'top'
+favorite: true
 ---
 
 ![Grip](./image1.png)

@@ -6,6 +6,7 @@ date: '2019-06-19'
 image: image1.jpg
 imageposition: 'center center'
 id: 'conserveira-bolhao'
+favorite: true
 ---
 
 ![A Conserveira do Bolhão](./image1.jpg)
