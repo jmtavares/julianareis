@@ -7,18 +7,18 @@ image: image3.png
 imageposition: 'top'
 ---
 
-![image1](./image1.png)
+![Grip](./image1.png)
 
-![image2](./image2.png)
+![Grip](./image2.png)
 
-![image3](./image3.png)
+![Grip](./image3.png)
 
-![image4](./image4.png)
+![Grip](./image4.png)
 
-![image5](./image5.png)
+![Grip](./image5.png)
 
-![image6](./image6.png)
+![Grip](./image6.png)
 
-![image7](./image7.png)
+![Grip](./image7.png)
 
-![image8](./image8.png)
+![Grip](./image8.png)

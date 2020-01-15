@@ -7,15 +7,15 @@ image: image2.jpg
 imageposition: 'top'
 ---
 
-![image1](./image1.jpg)
+![Ghost](./image1.jpg)
 
-![image2](./image2.jpg)
+![Ghost](./image2.jpg)
 
-![image3](./image3.jpg)
+![Ghost](./image3.jpg)
 
-![image4](./image4.jpg)
+![Ghost](./image4.jpg)
 
-![image5](./image5.jpg)
+![Ghost](./image5.jpg)
 
-![image6](./image6.jpg)
+![Ghost](./image6.jpg)
 
