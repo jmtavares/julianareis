@@ -27,7 +27,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-prefetch-google-fonts`,
             options: {
-                fonts: [{ family: `Nunito` }],
+                fonts: [{ family: `Nunito` }, {family: `Montserrat`}],
                 display: "swap"
             }
         },

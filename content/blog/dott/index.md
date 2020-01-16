@@ -4,15 +4,22 @@ description: "dott"
 keywords: "dott,video"
 date: '2019-06-19'
 id: dott
+image: image1.jpg
+imageposition: 'center center'
 hide: false
+favorite: true
 ---
+
+![dott](./image1.jpg)
+![dott](./image2.jpg)
+![dott](./image3.jpg)
+![dott](./image4.jpg)
 
 ::: section
 ::: aside
 ## Dott Star
 ### Tutorial da área de jogo
 :::
-
 <img src="/iphone5s.png" />`video: /video1.mp4`
 :::
 _________________
@@ -76,3 +83,5 @@ _________________
 
 <img src="/iphone5s.png"/>`video: /video6.mp4`
 :::
+
+![dott](./image5.jpg)
