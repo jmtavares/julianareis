@@ -1,58 +1,78 @@
 ---
 title: "dott"
 description: "dott"
-keywords: ""
-date: '2019-06-13'
+keywords: "dott,video"
+date: '2019-06-19'
 id: dott
-hide: true
+hide: false
 ---
-<h2>DOTT Star</h2>
-<h3>Tutorial da área de jogo</h3>
 
-<span><img src="/iphone5s.png" />`video: /video1.mp4`</span>
+::: section
+::: aside
+## Dott Star
+### Tutorial da área de jogo
+:::
 
-<hr />
+<img src="/iphone5s.png" />`video: /video1.mp4`
+:::
+_________________
 
-<h3>Troca de pontos</h3>
-<h3>Prémio mensal</h3>
-<h3>Ranking</h3>
-<h3>Convidar amigos</h3>
+::: section
+::: aside
+### Troca de pontos
+### Prémio mensal
+### Ranking
+### Convidar amigos
+:::
 
-<span><img src="/iphone5s.png"/>`video: /video2.mp4`</span>
+<img src="/iphone5s.png"/>`video: /video2.mp4`
+:::
+_________________
 
-<hr />
+::: section
+::: aside
+### Desafio diário
+### Missões
+:::
 
-<h3>Desafio diário</h3>
-<h3>Missões</h3>
+<img src="/iphone5s.png"/>`video: /video3.mp4`
+:::
+_________________
 
-<span><img src="/iphone5s.png"/>`video: /video3.mp4`</span>
+::: section
+::: aside
+## Vendas Privadas
+### Banner na Home
+### Dois modos de visualização do produto (grelha/galeria)
+### Promoções atuais e futuras
+### Ajustes da página de produto
+### Filtros
+### Avaliações
+:::
 
-<hr />
+<img src="/iphone5s.png"/>`video: /video4.mp4`
+:::
+_________________
 
-<h2>Vendas Privadas</h2>
-<h3>Banner na Home</h3>
-<h3>Dois modos de visualização do produto (grelha/galeria)</h3>
-<h3>Promoções atuais e futuras</h3>
-<h3>Ajustes da página de produto</h3>
-<h3>Filtros</h3>
-<h3>Avaliações</h3>
+::: section
+::: aside
+## Perfil
+### Alteração da área pessoal destacando os elementos fundamentais
+### Favoritos
+### Seleção de conteúdos personalizados segundo o interesse do utilizador
+:::
 
-<span><img src="/iphone5s.png"/>`video: /video4.mp4`</span>
+<img src="/iphone5s.png"/>`video: /video5.mp4`
+:::
+_________________
 
-<hr />
+::: section
+::: aside
+## Incentivo
+### Sistema fácil e simples
+### Transmite confiança
+### Incentiva a fidelização
+:::
 
-<h2>Perfil</h2>
-<h3>Alteração da área pessoal destacando os elementos fundamentais</h3>
-<h3>Favoritos</h3>
-<h3>Seleção de conteúdos personalizados segundo o interesse do utilizador</h3>
-
-<span><img src="/iphone5s.png"/>`video: /video5.mp4`</span>
-
-<hr />
-
-<h2>Incentivo</h2>
-<h3>Sistema fácil e simples</h3>
-<h3>Transmite confiança</h3>
-<h3>Incentiva a fidelização</h3>
-
-<span><img src="/iphone5s.png"/>`video: /video6.mp4`</span>
+<img src="/iphone5s.png"/>`video: /video6.mp4`
+:::

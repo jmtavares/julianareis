@@ -33,9 +33,22 @@
 }
 
 #dott {
-    span {
-        display: block;
-        position: relative;
+    h2 {
+        color: #9026B2;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        aside, p {
+            width: 50%;
+        }
+        p {
+            margin: 0 auto;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
 
         img {
             width: 300px;
@@ -50,10 +63,11 @@
             border-radius: 3px;
             outline: none;
         }
-    }
 
-    h2 {
-        color: #9026B2;
+        aside {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
@@ -78,6 +92,16 @@
         p {
             width: 100%;
             margin: 10px 0;
+        }
+    }
+
+    #dott {
+        section {
+            flex-direction: column;
+            aside {
+                width: 100%;
+                text-align: center;
+            }
         }
     }
 }

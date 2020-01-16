@@ -48,7 +48,7 @@ module.exports = {
                             height: 'auto',
                             preload: 'auto',
                             muted: true,
-                            autoplay: false,
+                            autoplay: true,
                             playsinline: true,
                             controls: true,
                             loop: true
@@ -63,7 +63,8 @@ module.exports = {
                             linkImagesToOriginal: false
                         }
                     },
-                    `gatsby-remark-copy-linked-files`
+                    `gatsby-remark-copy-linked-files`,
+                    `gatsby-remark-containers`
                 ]
             }
         },
