@@ -44,7 +44,7 @@ const educationOptions = [
 
 const experienceOptions = [
     {
-        date: "2013 - 2019",
+        date: "2013 - 2020",
         title: "MOLDIFLEX-INDUSTRIA DE MOLDES E FLEXOGRÁFICOS, LDA.",
         subtitle: "GRAPHIC DESIGNER"
     }
