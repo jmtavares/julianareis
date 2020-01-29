@@ -76,6 +76,7 @@ module.exports = {
             }
         },
         `gatsby-plugin-netlify`,
-        `gatsby-plugin-offline`
+        `gatsby-plugin-offline`,
+        `gatsby-plugin-emotion`
     ]
 };
