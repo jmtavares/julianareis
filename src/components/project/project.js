@@ -88,7 +88,9 @@ const Project = ({ node }) => {
                         {node.frontmatter.title}
                     </DescriptionNoImage>
                 )}
-                <Description>{node.frontmatter.title}</Description>
+                <Description className="description">
+                    {node.frontmatter.title}
+                </Description>
             </Link>
         </ProjectContainer>
     );
