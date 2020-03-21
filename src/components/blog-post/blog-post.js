@@ -6,7 +6,6 @@ import { Swipeable } from "react-swipeable";
 import Layout from "../layout/layout";
 import SEO from "../seo";
 import "./blog-post.less";
-import "./modal.less";
 import leftArrow from "../../images/left-arrow.svg";
 import rightArrow from "../../images/right-arrow.svg";
 import cancelImg from "../../images/cancel.svg";
