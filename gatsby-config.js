@@ -23,7 +23,6 @@ module.exports = {
                 icon: `src/images/logo.svg`
             }
         },
-        `gatsby-plugin-less`,
         {
             resolve: `gatsby-plugin-prefetch-google-fonts`,
             options: {

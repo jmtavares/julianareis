@@ -138,6 +138,94 @@ const Layout = ({ children }) => (
             .swipe-container {
               width: 100vw;
             }
+
+            #conserveira-bolhao {
+              .post {
+                display: flex;
+                flex-wrap: wrap;
+              }
+
+              p:nth-of-type(1) {
+                width: 100%;
+                margin: 20px 0;
+              }
+
+              p {
+                width: 50%;
+                margin: 0;
+              }
+            }
+
+            #dott {
+              font-family: "Montserrat", "Open Sans", Helvetica, Arial,
+                sans-serif;
+              h2 {
+                color: #9026b2;
+                font-weight: 900;
+                font-size: 35px;
+              }
+
+              img {
+                cursor: default;
+              }
+
+              section {
+                display: flex;
+                flex-direction: row;
+                aside,
+                p {
+                  width: 50%;
+                }
+                p {
+                  margin: 0 auto;
+                  width: 300px;
+                  text-align: center;
+                  position: relative;
+                }
+
+                img {
+                  width: 300px;
+                  cursor: default;
+                }
+
+                video {
+                  position: absolute;
+                  top: 97px;
+                  left: 28px;
+                  width: 244px;
+                  border-radius: 3px;
+                  outline: none;
+                }
+
+                aside {
+                  display: flex;
+                  flex-direction: column;
+                }
+              }
+            }
+
+            @media screen and (max-width: 800px) {
+              #conserveira-bolhao {
+                p:nth-of-type(1) {
+                  margin: 10px 0;
+                }
+
+                p {
+                  width: 100%;
+                  margin: 10px 0;
+                }
+              }
+
+              #dott {
+                section {
+                  flex-direction: column;
+                  aside {
+                    width: 100%;
+                    text-align: center;
+                  }
+                }
+              }
+            }
           `}
         />
         <Header siteTitle={data.site.siteMetadata.title} />

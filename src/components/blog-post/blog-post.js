@@ -3,12 +3,39 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import ReactModal from "react-modal";
 import { Swipeable } from "react-swipeable";
+import styled from "@emotion/styled";
 import Layout from "../layout/layout";
 import SEO from "../seo";
-import "./blog-post.less";
 import leftArrow from "../../images/left-arrow.svg";
 import rightArrow from "../../images/right-arrow.svg";
 import cancelImg from "../../images/cancel.svg";
+
+const BlogPostContainer = styled.div`
+  h1 {
+    max-width: 1024px;
+    margin: 40px auto;
+  }
+
+  .post {
+    width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  img {
+    cursor: zoom-in;
+  }
+
+  @media screen and (max-width: 1200px) {
+    h1 {
+      padding: 0 20px;
+    }
+    .post {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+`;
 
 class BlogPost extends React.PureComponent {
   constructor(props) {
@@ -133,13 +160,13 @@ class BlogPost extends React.PureComponent {
           keywords={keywords.split(",")}
           description={description}
         />
-        <div className="blog-post" ref={this.blogPostRef} id={id}>
+        <BlogPostContainer ref={this.blogPostRef} id={id}>
           <h1>{title}</h1>
           <div
             className="post"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-        </div>
+        </BlogPostContainer>
         <ReactModal
           isOpen={isOpen}
           shouldCloseOnOverlayClick={false}
