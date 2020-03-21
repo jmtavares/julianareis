@@ -8,54 +8,54 @@ import Portfolio from "../components/portfolio/portfolio";
 import ViewPortfolio from "../components/view-portfolio/view-portfolio";
 
 const IndexPage = ({ data }) => {
-    const posts = data.allMarkdownRemark;
+  const posts = data.allMarkdownRemark;
 
-    return (
-        <Layout>
-            <SEO title="Juliana Reis" keywords={[]} />
-            <Hello />
-            <Portfolio posts={posts} showTitle={false} />
-            <ViewPortfolio />
-        </Layout>
-    );
+  return (
+    <Layout>
+      <SEO title="Juliana Reis" keywords={[]} />
+      <Hello />
+      <Portfolio posts={posts} showTitle={false} />
+      <ViewPortfolio />
+    </Layout>
+  );
 };
 
 IndexPage.propTypes = {
-    data: PropTypes.object
+  data: PropTypes.object,
 };
 
 export default IndexPage;
 
 export const IndexQuery = graphql`
-    query IndexQuery {
-        allMarkdownRemark(
-            filter: { frontmatter: { favorite: { eq: true } } }
-            sort: { order: DESC, fields: [frontmatter___date] }
-        ) {
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    excerpt(pruneLength: 250)
-                    frontmatter {
-                        date(formatString: "MMMM Do YYYY")
-                        title
-                        imageposition
-                        favorite
-                        image {
-                            childImageSharp {
-                                resize(width: 1500, height: 1500) {
-                                    src
-                                }
-                                fluid(maxWidth: 786, quality: 100) {
-                                    ...GatsbyImageSharpFluid_withWebp
-                                }
-                            }
-                        }
-                    }
+  query IndexQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { favorite: { eq: true } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM Do YYYY")
+            title
+            imageposition
+            favorite
+            image {
+              childImageSharp {
+                resize(width: 1500, height: 1500) {
+                  src
                 }
+                fluid(maxWidth: 786, quality: 100) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
             }
+          }
         }
+      }
     }
+  }
 `;
