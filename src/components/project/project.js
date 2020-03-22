@@ -41,7 +41,7 @@ const DescriptionNoImage = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
   font-weight: 500;
@@ -59,7 +59,7 @@ const Description = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
   font-weight: 500;

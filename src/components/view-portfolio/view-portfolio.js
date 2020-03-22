@@ -11,7 +11,7 @@ const ViewPortfolioContainer = styled.div`
 const Button = styled.button`
   border: none;
   background-color: #0f7c79;
-  color: #ffffff;
+  color: #fff;
   border-radius: 3px;
   font-size: 16px;
   line-height: 20px;

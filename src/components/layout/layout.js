@@ -38,7 +38,7 @@ const Layout = ({ children }) => (
               &.ReactModal__Body--open {
                 position: fixed;
                 overflow-y: hidden;
-                background-color: #000000;
+                background-color: #000;
               }
             }
 

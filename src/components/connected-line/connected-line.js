@@ -35,7 +35,7 @@ const ConnectedLineContainer = styled.div`
     &::before {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 100px;
       width: 2px;
       background: #0f7c79;

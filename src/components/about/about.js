@@ -93,7 +93,7 @@ const AboutContainer = styled.div`
     width: 175px;
     height: 180px;
     border-radius: 50%;
-    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.75);
   }
 
   @media screen and (max-width: 1023px) {

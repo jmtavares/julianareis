@@ -31,7 +31,7 @@ const Menus = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  color: #222222;
+  color: #222;
   text-decoration: none;
   padding: 10px 5px;
   border-left: 5px solid transparent;
@@ -39,7 +39,7 @@ const StyledLink = styled(Link)`
   position: relative;
   overflow: hidden;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -57,7 +57,7 @@ const StyledLink = styled(Link)`
   &:focus,
   &:active,
   &.active {
-    &:before {
+    &::before {
       left: 0;
       right: 0;
     }
