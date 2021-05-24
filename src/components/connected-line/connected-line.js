@@ -9,7 +9,7 @@ const Grow = keyframes`
 }
 
 100% {
-  height: 70px;
+  height: 90px;
 }
 `;
 
@@ -28,7 +28,7 @@ const ConnectedLineContainer = styled.div`
 
   .line {
     position: relative;
-    height: 70px;
+    height: 90px;
     font-size: 14px;
     opacity: 0;
 
@@ -40,7 +40,7 @@ const ConnectedLineContainer = styled.div`
       width: 2px;
       background: #0f7c79;
       z-index: -1;
-      height: 70px;
+      height: 90px;
     }
     &.i0 {
       animation: ${Fade} 2s;

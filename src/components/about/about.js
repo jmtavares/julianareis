@@ -7,7 +7,7 @@ import locationIcon from "../../images/location.svg";
 import emailIcon from "../../images/email.svg";
 import phoneIcon from "../../images/phone.svg";
 import linkedInIcon from "../../images/linkedin.svg";
-import photo from "../../images/photo.png";
+import photo from "../../images/photo.jpeg";
 
 const AboutContainer = styled.div`
   display: flex;
