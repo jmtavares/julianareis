@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-import { Global, css } from "@emotion/core";
+import { Global, css } from "@emotion/react";
 import Header from "../header/header";
 
 const Layout = ({ children }) => (
