@@ -23,13 +23,13 @@ module.exports = {
         icon: `src/images/logo.svg`,
       },
     },
-    {
+    /* {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [{ family: `Nunito` }, { family: `Montserrat` }],
         display: "swap",
       },
-    },
+    }, */
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
