@@ -2,7 +2,7 @@
 title: "dott"
 description: "dott"
 keywords: "dott,video"
-date: '2019-06-19'
+date: '2019-06-25'
 id: dott
 image: image1.jpg
 imageposition: 'center center'

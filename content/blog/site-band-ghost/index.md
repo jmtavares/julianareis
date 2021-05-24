@@ -2,7 +2,7 @@
 title: "Site Band Ghost"
 description: "Site Band Ghost"
 keywords: "ghost,site,band,rock,ghouls"
-date: '2019-06-21'
+date: '2019-06-22'
 image: image2.jpg
 imageposition: 'top'
 favorite: true

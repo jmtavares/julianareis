@@ -23,18 +23,16 @@ const ProjectsList = styled.div`
   }
 `;
 
-const Portfolio = ({ posts, showTitle }) => {
-  return (
-    <div className="portfolio">
-      {showTitle && <Title>Portfolio</Title>}
-      <ProjectsList>
-        {posts.edges.map(({ node }) => (
-          <Project node={node} key={node.fields.slug} />
-        ))}
-      </ProjectsList>
-    </div>
-  );
-};
+const Portfolio = ({ posts, showTitle }) => (
+  <div className="portfolio">
+    {showTitle && <Title>Portfolio</Title>}
+    <ProjectsList>
+      {posts.edges.map(({ node }) => (
+        <Project node={node} key={node.fields.slug} />
+      ))}
+    </ProjectsList>
+  </div>
+);
 
 Portfolio.propTypes = {
   posts: PropTypes.object,
