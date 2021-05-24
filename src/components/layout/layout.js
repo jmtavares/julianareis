@@ -132,6 +132,7 @@ const Layout = ({ children }) => (
                 max-width: 100vw;
                 margin: 0 auto;
                 pointer-events: none;
+                background-color: #fff;
               }
             }
 
@@ -224,6 +225,18 @@ const Layout = ({ children }) => (
                     text-align: center;
                   }
                 }
+              }
+            }
+
+            .separator {
+              margin: 80px 0;
+              display: flex;
+              border-top: 2px solid #000;
+            }
+
+            #cogumelos-de-argoncilhe {
+              h2 {
+                font-weight: bold;
               }
             }
           `}

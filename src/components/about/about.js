@@ -143,11 +143,6 @@ const educationOptions = [
     subtitle: "UX & UI DESIGN",
   },
   {
-    date: "2019 - 2020",
-    title: "WALL STREET ENGLISH",
-    subtitle: "ENGLISH COURSE",
-  },
-  {
     date: "2018 - 2019",
     title: "CHIEF OF DESIGN",
     subtitle: "INTRODUCTION TO WEB DESIGN",
@@ -166,7 +161,7 @@ const educationOptions = [
 
 const experienceOptions = [
   {
-    date: "2013 - 2020",
+    date: "2013 - 2021",
     title: "MOLDIFLEX-INDUSTRIA DE MOLDES E FLEXOGRÁFICOS, LDA.",
     subtitle: "GRAPHIC DESIGNER",
   },
