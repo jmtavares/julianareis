@@ -37,7 +37,6 @@ export const IndexQuery = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMMM Do YYYY")
             title
