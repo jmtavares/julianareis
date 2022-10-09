@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
-import Hello from "../components/hello/hello";
+
 import Portfolio from "../components/portfolio/portfolio";
-import ViewPortfolio from "../components/view-portfolio/view-portfolio";
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark;
@@ -13,9 +12,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Juliana Reis" keywords={[]} />
-      <Hello />
+
       <Portfolio posts={posts} showTitle={false} />
-      <ViewPortfolio />
     </Layout>
   );
 };
@@ -29,7 +27,7 @@ export default IndexPage;
 export const IndexQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      filter: { frontmatter: { favorite: { eq: true } } }
+      filter: { frontmatter: { hide: { ne: true } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -40,8 +38,8 @@ export const IndexQuery = graphql`
           frontmatter {
             date(formatString: "MMMM Do YYYY")
             title
+            hide
             imageposition
-            favorite
             image {
               childImageSharp {
                 resize(width: 1500, height: 1500) {
