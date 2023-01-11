@@ -23,7 +23,7 @@
     "gatsby-remark-images": "^3.3.29",
     "gatsby-remark-video": "^1.2.5",
     "gatsby-source-filesystem": "^2.3.29",
-    "gatsby-transformer-remark": "^2.8.34",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.14",
     "prettier": "^2.7.1",
     "prop-types": "^15.7.2",
